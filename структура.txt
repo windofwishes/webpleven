@@ -1,0 +1,22 @@
+***структура на localhost***
+
+Меню - навигация
+1. Начало
+2. За нас - landing page
+	2.1. - имена
+	2.2. - е-мейли
+	2.3. - снимки
+	2.4. - телефони
+	2.5. - AD
+3. Дизайн
+	3.1. pixlr editor - https://pixlr.com/x/
+	3.2. https://www.remove.bg/
+	3.3. https://www.w3schools.com/
+	3.4. https://convertico.com/
+	3.5. https://github.com/windofwishes/webpleven.git
+4. Код
+	4.1. html
+		4.1.1 - 
+	4.2. css
+	4.3. jscript
+5. Контакти
