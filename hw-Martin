@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- *********************************** -->
+<!-- **** Училищна Телерик Академия **** -->
+<!--   ****** {Web-Pleven-2021} ******   -->
+<!-- *********************************** -->
+<html lang="bg">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>::..localhost..::</title>
+        <link rel="icon" href="/web-pleven-2021/localhost/images/favicon.ico">
+    </head>
+    <body>
+
+        <ol>
+            <li>Начало</li>
+            <li>За нас</li>
+            <ol type="1">
+                <li>имена</li>
+                <li>е-мейли</li>
+                <li>снимки</li>
+                <li>телефони</li>
+                <li>AD</li>
+            </ol>
+            <li>Дизайн</li>
+            <ol>
+                <li><a href="https://pixlr.com/x/">Pixlr editor</a></li>
+                <li><a href="https://www.remove.bg/">RemoveBG</a></li>
+                <li><a href="https://www.w3schools.com/">W3Schoos</a></li>
+                <li><a href="https://convertico.com/">ICO Convertor</a></li>
+                <li><a href="https://github.com/windofwishes/webpleven">GitHub</a></li>
+            </ol>
+            <li>Код</li>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+            <li>Контакти</li>
+        </ol>
+    </body>
+</html>
