@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!-- *********************************** -->
+<!-- **** Училищна Телерик Академия **** -->
+<!--   ****** {Web-Pleven-2021} ******   -->
+<!-- *********************************** -->
+<html lang="bg">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>::..localhost..::</title>
+        <link rel="icon" href="/web-pleven-2021/localhost/images/favicon.ico">
+    </head>
+    <body>
+        <input type="text" placeholder="Текст">
+        <br><input type="password" placeholder="Парола">
+        <br><input type="radio">
+        <br><input type="checkbox">
+        <br><input type="button">
+        <br><input type="color">
+        <br><input type="email" placeholder="напишете е-мейл">
+        <br><input type="file">
+        <br><input type="hidden">
+        <br><input type="image">
+        <br><input type="number">
+        <br><input type="range">
+        <br><input type="search">
+        <br><input type="tel">
+        <br><input type="time">
+        <br><input type="date">
+        <br><input type="datetime-local">
+        <br><input type="week">
+        <br><input type="month">
+        <br><input type="url">
+        <br><input type="submit">
+        <br><input type="reset">
+    
+        
+        placeholder="Парола"
+
+    <!-- Създаване на няколко връзки (линкове), които имат различно поведение -->
+    <!-- Този линк се отваря в нов таб -->
+    <a href="https://www.google.com/" target="_blank">
+        Връзка към търсачка
+    </a>
+    <br>
+    <!-- Този линк се отваря в същия таб, защото брузърът може да визуализира файлове от този тип -->
+    <a href="empty.txt">
+        Връзка към .txt
+    </a>
+    <br>
+    <!-- Този линк се изтегля -->
+    <a href="empty.txt" download>
+        Връзка към .txt
+    </a>
+    <br>
+    <!-- Този линк се изтегля, но с ново име -->
+    <a href="empty.txt" download="Гошо">
+        Връзка към .txt
+    </a>
+    <br>
+    <!-- Този линк се изтегля, защото браузътър не може да отваря файлове от този тип -->
+    <a href="empty.docx">
+        Връзка към .docx
+    </a>
+
+<!-- Създаване на списък и подсписък с различен вид номерация -->
+<ol type="1">
+    <li>
+        Елемент 1
+    </li>
+    <li>
+        Елемент 2
+    </li>
+    <li>
+        Елемент 3
+        <ol type="1">
+            <li>Подлемент 1</li>
+            <li>Подлеметн 2</li>
+        </ol>
+    </li>
+    <li>
+        Елемент 4
+    </li>
+    <li>
+        Елемент 5
+    </li>
+    <li>
+        Елемент 6
+    </li>
+    <li>
+        Елемент 7
+    </li>
+    <li>
+        Елемент 8
+    </li>
+</ol>
+
+ <!-- Разделение на HTML таговете по категории >>
+ <em>Наклонен текст</em>, стилизиран с таг em<br><br>
+ <!-- The <em> tag is a phrase tag. It renders as emphasized text. -->
+ <i>Друг наклонен текст</i>, стилизиран с таг i<br><br>
+ <!-- The <i> tag defines a part of text in an alternate voice or mood. The content of the <i> tag is usually displayed in italic. The <i> tag can be used to indicate a technical term, a phrase from another language, a thought, or a ship name, etc. Use the <i> element only when there is not a more appropriate semantic element -->
+ <cite>Трети наклонен текст</cite>, стилизиран с таг cite<br><br>
+ <!-- The <cite> tag defines the title of a work. -->
+ <strong>Удебелен текст</strong>, стилизиран с таг strong<br><br>
+ <!-- The <strong> tag is a phrase tag. It defines important text. -->
+ <b>Друг удебелен текст</b>, стилизиран с таг b<br><br>
+ <!-- The <b> tag specifies bold text without any extra importance. -->
+ <code>Компютърен код</code>, стилизиран с таг code<br><br>
+ <!-- The <code> tag is a phrase tag. It defines a piece of computer code. -->
+ <samp>Компютърен код</samp>, стилизиран с таг samp<br><br>
+ <!-- The <samp> tag is a phrase tag. It defines sample output from a computer program. -->
+ <kbd>Компютърен код</kbd>, стилизиран с таг kbd<br><br>
+ <!-- The <kbd> tag is a phrase tag. It defines keyboard input. -->
+ <pre>Преформатиран текст</pre>, стилизиран с таг pre<br><br>
+ <!-- The <pre> tag defines preformatted text. Text in a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks. -->
+ <var>Наклонен текст</var>, стилизиран с таг var<br><br>
+ <!-- The <var> tag is a phrase tag. It defines a variable. -->
+ <mark>Маркиран текст</mark>, стилизиран с таг mark<br><br>
+ <!-- The <mark> tag defines marked text. Use the <mark> tag if you want to highlight parts of your text. -->
+ <del>Задраскан текст</del>, стилизиран с таг del<br><br>
+ <!-- The <del> tag defines text that has been deleted from a document. -->
+ <s>Задраскан текст</s>, стилизиран с таг s<br><br>
+ <!-- The <s> tag specifies text that is no longer correct, accurate or relevan. The <s> tag should not be used to define replaced or deleted text, use the <del> tag to define replaced or deleted text. -->
+ <ins>Подчертан текст</ins>, стилизиран с таг ins<br><br>
+ <!-- The <ins> tag defines a text that has been inserted into a document. -->
+ <u>Подчертан текст</u>, стилизиран с таг u<br><br>
+ <!-- The <u> tag represents some text that should be stylistically different from normal text, such as misspelled words or proper nouns in Chinese. -->
+ <abbr title="Описание на абревиатура">Текст</abbr>, стилизиран като абревиатура с таг abbr<br><br>
+ <!-- The <abbr> tag defines an abbreviation or an acronym, like "HTML", "Mr.", "Dec.", "ASAP", "ATM". Tip: An abbreviation and an acronym are both shortened versions of something else. Both are often represented as a series of letters. Marking up abbreviations can give useful information to browsers, translation systems and search-engines. -->
+ <dfn title="Описание на абревиатура">Текст</dfn>, стилизиран като абревиатура с таг dfn<br><br>
+ <!-- The <dfn> tag represents the defining instance of a term in HTML. -->
+ <small>Малък текст</small>, стилизиран с тaг small<br><br>
+ <!-- he <small> tag defines smaller text (and other side comments). -->
+ <sub>Sub</sub>script, стилизиран с тaг sub<br><br>
+ <!-- The <sub> tag defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O. -->
+ <sup>Super</sup>script, стилизиран с тaг sup<br><br>
+ <!-- The <sup> tag defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW[1]. -->
+ <blockquote>
+     Параграф, стилизиран като цитат с таг blockquote
+ </blockquote><br><br>
+ <!-- The <blockquote> tag specifies a section that is quoted from another source. Browsers usually indent <blockquote> elements. -->
+
+ <q>Текст, който е кратък цитат</q>, стилизиран с таг q<br><br>
+ <!-- The <q> tag defines a short quotation. -->
+
+********************************************************************
+***13-11-2021***
+style="background-color:#1178ac"
+style="color:white"
+
+
+<head>
+    <title>******</title>
+
+    <!-- Списък от ключови думи -->
+    <meta name = "keywords" content = "*****">
+
+    <!-- Описание на страницата -->
+    <meta name = "description" content = "*****">
+
+    <!-- Информация за автора -->
+    <meta name = "author" content = "*****">
+
+    <!-- Page content type -->
+    <meta http-equiv = "content-type" content = "*****">
+
+    <!-- Опресняване на страницата -->
+    <meta http-equiv = "refresh" content = "30">
+
+    <!-- Изтичане на страницата -->
+    <meta http-equiv = "expires" content = "*****">
+
+    <!-- Казва на роботите да не индексира съдържанието на страницата -->
+    <meta name = "robots" content = "*****">
+
+ </head>  
+ 
+*************************************************************************** 
+ASCII Characters	Description	HTML Entity Codes
+   space	&#32;
+!	exclamation mark	&#33;
+"	quotation mark	&#34;
+#	number sign	&#35;
+$	dollar sign	&#36;
+%	percent sign	&#37;
+&	ampersand	&#38;
+'	apostrophe	&#39;
+(	left parenthesis	&#40;
+)	right parenthesis	&#41;
+*	asterisk	&#42;
++	plus sign	&#43;
+,	comma	&#44;
+-	hyphen	&#45;
+.	period	&#46;
+/	slash	&#47;
+    </body>
+</html>
