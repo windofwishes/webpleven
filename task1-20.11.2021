@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zadacha</title>
+    </head>
+    <body>
+        <table border="2px">
+            <tr>
+                <th>Наименование</th>
+                <th>Цвят</th>
+                <th>16ен код</th>
+            </tr>
+            <tr>
+                <th>Aqua</th>
+                <th bgcolor="aqua"></th>
+                <th>#00ffff</th>
+            </tr>
+            <tr>
+                <th>Black</th>
+                <th bgcolor="black"></th>
+                <th>#000000</th>
+            </tr>
+            <tr>
+                <th>Blue</th>
+                <th bgcolor="blue"></th>
+                <th>#0000ff</th>
+            </tr>
+            <tr>
+                <th>Fuchsia</th>
+                <th bgcolor="fuchsia"></th>
+                <th>#ff00ff</th>
+            </tr>
+            <tr>
+                <th>Gray</th>
+                <th bgcolor="gray"></th>
+                <th>#808080</th>
+            </tr>
+            <tr>
+                <th>Green</th>
+                <th bgcolor="green"></th>
+                <th>#008000</th>
+            </tr>
+            <tr>
+                <th>Lime</th>
+                <th bgcolor="lime"></th>
+                <th>#00ff00</th>
+            </tr>
+            <tr>
+                <th>Navy</th>
+                <th bgcolor="navy"></th>
+                <th>#000080</th>
+            </tr>
+            <tr>
+                <th>Olive</th>
+                <th bgcolor="olive"></th>
+                <th>#808000</th>
+            </tr>
+            <tr>
+                <th>Purple</th>
+                <th bgcolor="purple"></th>
+                <th>#800080</th>
+            </tr>
+            <tr>
+                <th>Red</th>
+                <th bgcolor="red"></th>
+                <th>#ff0000</th>
+            </tr>
+            <tr>
+                <th>Silver</th>
+                <th bgcolor="silver"></th>
+                <th>#c0c0c0</th>
+            </tr>
+            <tr>
+                <th>Teal</th>
+                <th bgcolor="teal"></th>
+                <th>#008080</th>
+            </tr>
+            <tr>
+                <th>White</th>
+                <th bgcolor="white"></th>
+                <th>#ffffff</th>
+            </tr>
+            <tr>
+                <th>Yellow</th>
+                <th bgcolor="yellow"></th>
+                <th>#ffff00</th>
+            </tr>
+            <th colspan="3">Тези са обединени</th>
+        </table>
+        <br>
+        <br>
+        <h1>Contact With Us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <br>
+        <p>Your Name*</p>
+        <input type="text">
+        <p>Your Email*</p>
+        <input type="text">
+        <p>Subject*</p>
+        <input type="text">
+        <p>Your Message*</p>
+        <input type="text">
+        <input type="button" value="SEND MESSAGE">
+        <br>
+        <br>
+        <h1>Make a Donation Now!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <h4>Payment Type</h4>
+        <br>
+        <input type="radio">One Time
+        <input type="radio">Renewal
+        <br>
+        <br>
+        <input type="text" placeholder="Name*">
+        <br>
+        <br>
+        <input type="email" placeholder="E-Mail*">
+        <br>
+        <br>
+        <input type="radio">$100
+        <input type="radio">$100
+        <input type="radio">$100
+        <input type="radio">$100
+        <input type="radio">$100
+        <br>
+        <br>
+        <input type="button" value="DONATE NOW">
+    </body>
+</html>
