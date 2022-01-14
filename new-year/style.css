@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Licorice&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 64px;
+    background: #0a0a0a url('./stars.jpg') repeat top center;
+    color: #eaeaea;
+    z-index: 1;
+}
+
+section:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: transparent url('./twinklink.png') repeat top center;
+    animation: move-twink 525s linear infinite;
+}
+
+@keyframes move-twink {
+    from { background-position: 0 0; }
+    to { background-position: 100000px 5000px;}
+}
+
+.container {
+    -webkit-box-reflect: below 4px linear-gradient(transparent, rgba(255,255,255,0.2));
+}
+
+h2 {
+    --color: #e84393;
+    font-family: 'Licorice', cursive;
+    font-weight: normal;
+    text-shadow: 0 0 1px var(--color),
+                 0 0 5px var(--color),
+                 0 0 10px var(--color),
+                 0 0 15px var(--color),
+                 0 0 25px var(--color);
+    animation: glowAnime 1s infinite linear;
+}
+
+@keyframes glowAnime {
+    100% {--color: #0984e3;}
+}
+
+.scroll-widget {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 52px;
+}
+
+.scroll-widget span {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.scroll-container {
+    perspective: 500px;
+}
+
+.scroller {
+    width: 240px;
+    height: 64px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-50px) rotateX(0deg);
+    animation: rotate 12s infinite cubic-bezier(0.175, 0.885, 0.32, 1.8);
+}
+
+@keyframes rotate {
+    5% {transform: translateZ(-50px) rotateX(-90deg);}
+    25% {transform: translateZ(-50px) rotateX(-90deg);}
+
+    30% {transform: translateZ(-50px) rotateX(-180deg);}
+    50% {transform: translateZ(-50px) rotateX(-180deg);}
+    
+    55% {transform: translateZ(-50px) rotateX(-270deg);}
+    75% {transform: translateZ(-50px) rotateX(-270deg);}
+    
+    80% {transform: translateZ(-50px) rotateX(-360deg);}
+    100% {transform: translateZ(-50px) rotateX(-360deg);}
+}
+
+.scroller div {
+    position: absolute;
+    width: 240px;
+    height: 64px;
+    top: var(--top);
+    background-color: var(--bgColor);
+    color: #313233;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 12px var(--bgColor);    
+    transform: translateZ(var(--translateZ)) rotateX(var(--rotateX));
+}
+
+.front {
+    
+    --bgColor: #fbc531;
+    --top: 0;
+    --translateZ: 32px;
+    --rotateX: 0deg;
+}
+
+.top {
+    --bgColor: #8c7ae6;
+    --top: -32px;
+    --translateZ: 0px;
+    --rotateX: 90deg;
+}
+
+.back {
+    --bgColor: #0097e6;
+    --top: 0px;
+    --translateZ: -32px;
+    --rotateX: 180deg;
+}
+
+.bottom {
+    --bgColor: #44bd32;
+    --top: -32px;
+    --translateZ: 0px;
+    --rotateX: -90deg;
+}
