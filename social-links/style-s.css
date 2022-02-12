@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background-color: #212121;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 90%;
+    background-color: #313233;
+    margin: 0 auto;
+}
+
+.side-widget {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    height: 80px;
+    width: 40px;
+    top: 200px;
+    left: 20px;
+    padding: 4px 0;
+    border: 4px solid transparent;
+    border-radius: 20px;
+    background: linear-gradient(#313233, #313233) padding-box,
+                linear-gradient(90deg, #e84393, #f1875c) 0 100%/50% no-repeat border-box,
+                linear-gradient(-90deg, #f9ca24, #f1875c) 100% 100%/22px 40px no-repeat border-box;
+    transition: all linear 0.3s;
+}
+
+.side-widget:hover {
+    height: 140px;
+    background: linear-gradient(#313233, #313233) padding-box,
+                linear-gradient(90deg, #e84393, #f1875c) 0 100%/50% no-repeat border-box,
+                linear-gradient(-90deg, #f9ca24, #f1875c) 100% 100%/22px 0 no-repeat border-box;
+}
+
+.side-widget:before {
+    content: '';
+    position: absolute;
+    height: 220px;
+    width: 20px;
+    top: -228px;
+    left: 2px;
+    border-radius: 20px;
+    border: 4px solid transparent;
+    background: linear-gradient(#313233, #313233) padding-box,
+    linear-gradient(-90deg, #f9ca24, #f1875c) 100% 100%/50% 100% no-repeat border-box;
+}
+.side-widget a {
+    position: relative;
+    font-size: 16px;
+    color: #e84393;
+    transition: all linear 0.5s;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.5) 0.5s;
+}
+
+.side-widget:hover a {
+    font-size: 18px;
+    color: #f9ca24;
+}
+
+.side-widget a:hover:after {
+    content: attr(data-title);
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    top: calc(50% - 12px);
+    left: calc(100% + 4px);
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #313233;
+    background: linear-gradient(90deg, #f1875c, #f9ca24);
+}
+
+.side-widget a:hover:before {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: 100%;
+    top: calc(50% - 5px);
+    border-right: 5px solid #f1875c;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
